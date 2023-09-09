@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>My Portfolio</title>
+</head>
+
+<body>
+    <header id="header">
+        <div class="container">
+            <img src="images/logo.jpg" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-text">
+            <p>Web Developer</p>
+            <h1>Hi, I'm <span>Divyansh</span><br>from New Delhi, India</h1>
+        </div>
+    </header>
+    <!---------------about----------->
+    <div id="about">
+        <div class="container-about">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/about.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1>About me</h1>
+                    <p>Pro-active pre-final year student with excellent skills in programming and web development. Adaptive, hard working, consistent and filled with potential. Have outstanding communication skills and the ability to make people my own. Eager to apply my knowledge and experience in the real world. Always ready to explore and learn more.</p>
+                    <div class="tab-titles">
+                        <div class="tab-links active-link" onclick="opentab('Work')">Work</div>
+                        <div class="tab-links" onclick="opentab('Education')">Education</div>
+                        <div class="tab-links" onclick="opentab('Experience')">Experience</div>
+                    </div>
+                    <div class="tab-contents active-tab" id="Work">
+                        <ul>
+                            <li><span>Web Developer</span><br>Designing Websites and Apps</li>
+                            <li><span>Software Developer</span><br>Create efficient and scalable software solutions</li>
+                            <li><span>React Developer</span><br>Using React to build Interactive Websites</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>School 2009 - 2020</span><br>St. Xavier's Delhi</li>
+                            <li><span>College 2020 - 2024</span><br>Guru Gobind Singh Indraprastha University</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>CodSoft</span><br>Web Developer</li>
+                            <li><span>Code Help</span><br>Data Structures and Algorithms</li>
+                            <li><span>Udemy</span><br>React Developer</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------------------------services----------------------->
+    <div id="services">
+        <div class="container-services">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <h2>Web Designing</h2>
+                    <p>I specialize in crafting captivating websites, employing HTML, CSS, JavaScript, and ReactJS to create interactive and visually stunning online experiences, tailored to meet your unique needs</p>
+                    <a href="#">Click here to learn more</a>
+                </div>
+                <div>
+                    <h2>Software Designing</h2>
+                    <p>As a fresher in Software Designing, my goal is to create efficient and scalable software solutions. I'm skilled in requirements analysis, system architecture, data modeling, and algorithm design, dedicated to meeting your business objectives seamlessly</p>
+                    <a href="#">Click here to learn more</a>
+                </div>
+                <div>
+                    <h2>Data Analysis</h2>
+                    <p>As a newcomer in Data Analysis, I'm committed to uncovering valuable insights from your data. My skills include data collection, analysis, visualization, and reporting. I aim to assist you in making informed decisions based on data-driven insights</p>
+                    <a href="#">Click here to learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------------Portfolio------------->
+    <div id="portfolio">
+        <div class="container-portfolio">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.jpg">
+                    <div class="layer">
+                        <h3>NetFlix Clone</h3>
+                        <p>NetFlix Clone is designed using HTML, CSS and JavaScript. The design is exactly like the original NetFlix Website and performs some of its functionality as well</p>
+                        <a href="#">Go To Project</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.jpg">
+                    <div class="layer">
+                        <h3>Spotify 2.0</h3>
+                        <p>I'm excited to present Spotify 2.0, my interactive project developed with ReactJS, Tailwind CSS, Redux, and powered by RapidAPI. It enhances the Spotify experience with a fresh and dynamic interface.</p>
+                        <a href="#">Go To Project</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.jpg">
+                    <div class="layer">
+                        <h3>YouTube Clone</h3>
+                        <p>YouTube Clone is designed using Bootstrap. It replicates the beloved video-sharing platform YouTube, offering a familiar and user-friendly interface</p>
+                        <a href="#">Go To Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">Show More</a>
+    </div>
+    <!----------------------------Contact--------------->
+    <div id="contact">
+        <div class="container-contact">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p>divyansh75sharma@gmail.com</p>
+                    <p>+91 8745992299</p>
+                    <div class="social-icons">
+                        <img src="images/contact_logo_facebook.jpg" href="https://facebook.com">
+                        <img src="images/contact_logo_instagram.jpg" href="https://Instagram.com">
+                        <img src="images/contact_logo_twitter.png" href="https://twitter.com">
+                    </div>
+                    <a href="images/Divyansh Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>                
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Divyansh</p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for(tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
+</html>    
